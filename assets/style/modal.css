@@ -1,0 +1,238 @@
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background: #ffffffcc;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container.mostrar {
+    display: flex;
+}
+
+.modal {
+    background: white;
+    width: 380px;
+    position: relative;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal .3s;
+}
+
+#fechar {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+form {
+    padding: 10px 22px;
+    box-shadow: 0 4px 6px #00000021, 0 2px 7px #0000001c;
+    border-radius: 8px;
+}
+
+#form-text {
+    width: 100%;
+    border-bottom: 1px solid #b6b7b9a4;
+    margin-bottom: 20px;
+}
+
+#form-text p {
+    padding: 5px 0px 11px 0px;
+    font-size: 15px;
+}
+
+form p {
+    color: #6A6E70;
+}
+
+form .input-text {
+    width: 100%;
+    padding: 11px;
+    margin: 0px 10px 8px 0px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #c8c9cc;
+    border-radius: 6px;
+    background: #f5f6f7;
+}
+
+#name #name-input1 {
+    margin-right: 7px;
+}
+
+#name input {
+    width: 48%;
+    margin-right: 0px;
+}
+
+.birth-gender {
+    padding: 5px 0px 8px 0px;
+    font-size: 13px;
+}
+
+select,
+.gender-div {
+    width: 102px;
+    padding: 0px 25px 0px 8px;
+    height: 36px;
+    border-radius: 4px;
+    font-size: 15px;
+    border: 1px solid #c8c9cc;
+    outline: none;
+    background: #fff;
+    color: #1c1e21;
+}
+
+.day-year {
+    margin-left: 9px;
+}
+
+#gender-container {
+    display: flex;
+}
+
+.gender-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 8px;
+}
+
+.gender-div.fem-other {
+    margin-left: 12px;
+}
+
+.gender-radio {
+    display: block;
+}
+
+#terms {
+    width: 100%;
+    text-align: justify;
+    margin: 11px 0px;
+    font-size: 11px;
+}
+
+#terms a {
+    color: #2e8adb;
+}
+
+#btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-form {
+    width: 60%;
+    height: 36px;
+    padding: 0 32px;
+    font-weight: bolder;
+    font-size: 17px;
+    border-radius: 6px;
+    background: #00a400;
+    color: white;
+}
+
+#btn-form:hover {
+    background: linear-gradient(#67ae55, #578843);
+}
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background: #ffbbbb;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgSucess {
+    text-align: center;
+    color: #00bb00;
+    background: #bbffbe;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgError2 {
+    text-align: center;
+    color: #ff0000;
+    background: #ffbbbb;
+    padding: 8px;
+    margin-bottom: 4px;
+    font-size: 11px;
+    border-radius: 4px;
+    display: none;
+}
+
+@media (max-width: 415px) {
+    .modal {
+        width: 92%;
+    }
+
+    #select-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    select {
+        padding: 0px 0px 0px 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    #name input {
+        width: 100%;
+    }
+
+    #gender-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #terms {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 345px) {
+    .gender-div {
+        padding: 0px;
+    }
+    .gender-radio {
+        margin: 0px 5px 0px 5px;
+    }
+    .gender-div.fem-other {
+    margin-left: 8px;
+}
+}

@@ -1,0 +1,38 @@
+/* Configurações Principais */
+
+:root {
+    --azul: #166fe5;
+    --verde: #42b72a;
+    --fonte: Helvetica, Arial, sans-serif;
+    --cinza: #8a8d91;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    background-color: #E9EBEE;
+    font-family: var(--fonte);
+}
+
+.languages a {
+    color: var(--cinza);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#github-destaque {
+    color: #767a7e;
+}
+
+button {
+    cursor: pointer;
+}

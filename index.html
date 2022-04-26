@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" title="Facebook Login Clone">
+    <meta name="description" content="Create an account or log into Facebook. Connect with friends, family and other people you know. Share photos and videos, send messages and get updates.">
+    <meta name="robots" content="index, follow">
+    <meta name="keyword" content="Facebook, facebook login, facebook clone, github">
+    <link rel="shortcut icon" href="assets/img/facebook.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style/elementos.css">
+    <link rel="stylesheet" href="assets/style/login.css">
+    <link rel="stylesheet" href="assets/style/modal.css">
+    <title>Facebook - log in or sign up</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="main-content" id="facebook-text">
+            <img src="assets/img/dF5SId3UHWd.svg" alt="Facebook Logo" id="logo">
+            <p>Connect with friends and the world around you on Facebook.</p>
+        </div>
+
+        <div class="main-content" id="forms-login">
+
+            <div class="box-login">
+                <div id="msgError2"></div>
+                <input type="email" id="email-login" placeholder="Email or phone number">
+                <input type="password" id="password-login" placeholder="Password">
+                <button id="log-in">Log In</button>
+                <a href="index.html">Forgot password?</a>
+                <div id="row"></div>
+                <button id="create-account">Create new account</button>
+            </div>
+
+            <div class="create-page">
+                <p>
+                    <a href="index.html">Create a Page</a>
+                    for a celebrity, brand or business.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-login" class="modal-container">
+        <div class="modal">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/__geKiQnSG-.png" alt="fechar" width="24" height="24"
+                id="fechar">
+
+            <form>
+                <div id="form-text">
+                    <h1>Sign Up</h1>
+                    <p>It’s quick and easy.</p>
+                </div>
+                <div id="msgError"></div>
+                <div id="msgSucess"></div>
+                <div id="name">
+                    <input type="text" id="name-input1" class="input-text" placeholder="First Name">
+                    <input type="text" id="last-name" class="input-text" placeholder="Last Name">
+                </div>
+                <input type="text" id="email-number" class="input-text" placeholder="Mobile number or email">
+                <input type="password" id="new-password" class="input-text" placeholder="New password">
+
+                <p class="birth-gender">Birthday</p>
+                <div id="select-container">
+                    <select aria-label="Month" name="birthday_month" title="Month" id="month"></select>
+                    <select aria-label="Day" name="birthday_day" title="Day" id="day" class="day-year"></select>
+                    <select aria-label="Year" name="birthday_year" title="Year" id="year" class="day-year"></select>
+                </div>
+
+                <p class="birth-gender">Gender</p>
+                <span id="gender-container">
+                    <div class="gender-div">
+                        <label>Male</label>
+                        <input type="radio" name="sex" class="gender-radio">
+                    </div>
+                    <div class="gender-div fem-other">
+                        <label>Female</label>
+                        <input type="radio" name="sex" class="gender-radio">
+                    </div>
+                    <div class="gender-div fem-other">
+                        <label>Others</label>
+                        <input type="radio" name="sex" class="gender-radio">
+                    </div>
+                </span>
+                <p id="terms">By clicking Sign Up, you agree to our <a href="index.html">Terms</a>, <a href="index.html">Data Policy</a> and <a href="index.html">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.</p>
+                <div id="btn-box"><button id="btn-form">Sign Up</button></div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="modal.js"></script>
+</body>
+
+</html>
